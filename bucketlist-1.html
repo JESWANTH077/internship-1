@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-10">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bucket List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header, footer {
+            text-align: center;
+            background-color: #444;
+            color: #fff;
+            padding: 10px 0;
+        }
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+        .bucket-list {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0;
+            list-style-type: none;
+        }
+        .bucket-list li {
+            background: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+            transition: transform 0.2s;
+        }
+        .bucket-list li:hover {
+            transform: scale(1.02);
+        }
+        .bucket-list li.completed::before {
+            content: "✔";
+            color: green;
+            position: absolute;
+            left: -25px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        @media (max-width: 600px) {
+            .bucket-list {
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Bucket List</h1>
+    </header>
+    <ul class="bucket-list">
+        <li>Travel to Japan</li>
+        <li class="completed">Learn to play the guitar</li>
+        <li>Write a novel</li>
+        <li class="completed">Run a marathon</li>
+        <li>Go skydiving</li>
+    </ul>
+    <footer>
+        <p>© 2025 My Bucket List</p>
+        <h2>created by Veluguri Jeswanth</h2>
+    <a href="mailto:23btrcm013@jainuniversity.ac.in">Contact Us</a>
+    </footer>
+</body>
+</html>
